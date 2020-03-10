@@ -17,10 +17,14 @@ body {
 }
 
 div.wrapper {
-  min-height: 100vh;
+  max-width: 1920px;
   margin: 0 15px;
+  @media (min-width: 1920px) {
+    margin: 0 auto;
+  }
 }
 
 @import "./Header";
 @import "./Heading";
 @import "./AboutMe";
+@import "./Portfolio";

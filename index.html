@@ -4,7 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akwartone</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
+
+    <!-- masonry -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/dist/css/style.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <script src="/dist/es2015/lightbox.js"></script>
+    <!-- masonry end -->
   </head>
   <body>
     <div class="wrapper">
@@ -12,24 +30,24 @@
       <header class="navigation">
         <div class="nav">
           <ul class="nav__list">
-            <a href="#" class="nav__logo"
+            <a href="" class="nav__logo"
               ><img src="./images/trza zrobić logo.jpg" alt=""
             /></a>
             <a href="" class="spacer"></a>
             <li class="nav__item">
-              <a href="#" class="nav__button">O mnie</a>
+              <a href="" class="nav__button">O mnie</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__button">Portfolio</a>
+              <a href="" class="nav__button">Portfolio</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__button">Usługi</a>
+              <a href="" class="nav__button">Usługi</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__button">Współpraca</a>
+              <a href="" class="nav__button">Współpraca</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__button">Kontakt</a>
+              <a href="" class="nav__button">Kontakt</a>
             </li>
           </ul>
         </div>
@@ -76,6 +94,222 @@
           </p>
         </div>
       </section>
+
+      <!-- Portfolio Section -->
+      <!-- <section class="portfolio">
+        <h1 class="portfolio__title">O mnie</h1>
+        <p class="portfolio__text">
+          Nie sposób zliczyć projekty które wyszły spod mojej ręki, są to
+          zarówno sesje zdjęciowe, zdobienia ciała, projekty graficzne oraz dużo
+          więcęj.
+          <br />
+          Podejmuję się każdego wyzwania i efekty niektórych z nich chciałbym
+          Państwu zaprezentować.
+        </p>
+        <div class="portfolio__gallery">
+          <a
+            href="images/pół twarzy.jpg"
+            data-lightbox="image-1"
+            data-title="My caption"
+          >
+            <img
+              src="./images/portfolio/malowanienogi.jpg"
+              alt=""
+              class="portfolio__img"
+              data-lightbox="image-1"
+            />
+          </a>
+
+          <img
+            src="./images/portfolio/białyobrazekzpaletą.jpg"
+            alt=""
+            class="portfolio__img"
+            data-lightbox="image-2"
+          />
+          <img
+            src="./images/portfolio/okulary na kartce.jpg"
+            alt=""
+            class="portfolio__img"
+            data-lightbox="image-3"
+          />
+          <img
+            src="./images/portfolio/modelka na czarnym tle.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+          <img
+            src="./images/portfolio/politechnika.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+          <img
+            src="./images/portfolio/może.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+          <img
+            src="./images/portfolio/kobietaczerwonewłosy.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+          <img
+            src="./images/portfolio/autocad.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+          <img
+            src="./images/portfolio/lampkanocna.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+          <img
+            src="./images/portfolio/serduszkociasteczko.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+          <img
+            src="./images/portfolio/51635282_248843329385234_1966475889093233038_n.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+
+          <img
+            src="./images/portfolio/88991862_780875142435810_5385960300868571315_n.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+          <img
+            src="./images/portfolio/razpodwozem.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+
+          <img
+            src="./images/portfolio/razpodwozem.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+        </div>
+      </section> -->
+
+      <!-- sdaaaaaaaaaaaaaaaaaaaaaa -->
+      <section class="portfolio">
+        <h1 class="portfolio__title">O mnie</h1>
+        <p class="portfolio__text">
+          Nie sposób zliczyć projekty które wyszły spod mojej ręki, są to
+          zarówno sesje zdjęciowe, zdobienia ciała, projekty graficzne oraz dużo
+          więcęj.
+          <br />
+          Podejmuję się każdego wyzwania i efekty niektórych z nich chciałbym
+          Państwu zaprezentować.
+        </p>
+
+        <div class="portfolio__gallery">
+          <ul id="WS-LiSli" class="grid">
+            <li data-item-order="1">
+              <img
+                data-description="More Description Here"
+                src="./images/portfolio/malowanienogi.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+            </li>
+
+            <li data-item-order="2">
+              <img
+                data-description="More Description Here"
+                src="./images/portfolio/białyobrazekzpaletą.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+            </li>
+
+            <li data-item-order="3">
+              <img
+                src="./images/portfolio/okulary na kartce.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+            </li>
+
+            <li data-item-order="4">
+              <img
+                src="./images/portfolio/modelka na czarnym tle.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+            </li>
+            <li data-item-order="5">
+              <img
+                src="./images/portfolio/politechnika.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+            </li>
+
+            <li data-item-order="6">
+              <img
+                src="./images/portfolio/może.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+            </li>
+            <li data-item-order="7">
+              <img
+                src="./images/portfolio/autocad.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+            </li>
+            <li data-item-order="8">
+              <img
+                src="./images/portfolio/kobietaczerwonewłosy.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+            </li>
+
+            <li data-item-order="9">
+              <img
+                src="./images/portfolio/lampkanocna.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+            </li>
+
+            <li data-item-order="10">
+              <img
+                src="./images/portfolio/serduszkociasteczko.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+            </li>
+            <li data-item-order="11">
+              <img
+                src="./images/portfolio/51635282_248843329385234_1966475889093233038_n.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+            </li>
+            <li data-item-order="12">
+              <img
+                src="./images/portfolio/88991862_780875142435810_5385960300868571315_n.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+            </li>
+            <li data-item-order="13">
+              <img
+                src="./images/portfolio/razpodwozem.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
+
+    <script src="/scripts/masonry.js"></script>
   </body>
 </html>
