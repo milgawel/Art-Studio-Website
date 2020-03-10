@@ -13,11 +13,14 @@ body {
   min-height: 200vh;
   background-color: #000;
   width: 100%;
+  color: rgb(240, 229, 208);
 }
 
 div.wrapper {
   min-height: 100vh;
+  margin: 0 15px;
 }
 
 @import "./Header";
 @import "./Heading";
+@import "./AboutMe";
