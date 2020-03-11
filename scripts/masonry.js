@@ -1,15 +1,13 @@
 $(function() {
   $("#WS-LiSli").WS_lightbox_free({
     enable: ["close", "arrows"],
-    close: {
-      size: 4000
-    },
+
     buttons: {
       size: 40,
       style: "square", // ( default, square, circle, rounded )
       color: "black",
       color_icon: "white",
-      border_width: 1,
+      border_width: 12,
       border_color: "white",
       opacity: 0.5,
       hover_opacity: 1
