@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akwartone</title>
 
-    <!-- masonry -->
-
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -22,37 +20,26 @@
     <link rel="stylesheet" href="./dist/css/style.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <script src="/dist/es2015/lightbox.js"></script>
-    <!-- masonry end -->
   </head>
   <body>
     <div class="wrapper">
       <!-- NAVIGATION -->
-      <header class="navigation">
-        <div class="nav">
-          <ul class="nav__list">
-            <a href="" class="nav__logo"
-              ><img src="./images/trza zrobić logo.jpg" alt=""
-            /></a>
-            <a href="" class="spacer"></a>
-            <li class="nav__item">
-              <a href="" class="nav__button">O mnie</a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="nav__button">Portfolio</a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="nav__button">Usługi</a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="nav__button">Współpraca</a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="nav__button">Kontakt</a>
-            </li>
+
+      <div class="navigation__wrapper">
+        <div class="navigation__button">
+          <i class="fa fa-bars"></i>
+        </div>
+        <div class="navigation-menu">
+          <ul>
+            <li><a href="#">O mnie</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Usługi</a></li>
+            <li><a href="#">Współpraca</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <!-- <li><a href="">PRICING</a></li> -->
           </ul>
         </div>
-      </header>
-      <!--  -->
+      </div>
 
       <!-- Welcome heading -->
       <div class="heading">
@@ -96,7 +83,6 @@
       </section>
 
       <!-- Portfolio Section -->
-
       <section class="portfolio">
         <h1 class="portfolio__title">Portfolio</h1>
         <p class="portfolio__text">
@@ -274,6 +260,7 @@
         </div>
       </section>
 
+      <!-- contact section -->
       <section class="contact">
         <div class="particles" id="particles-js"></div>
 
@@ -337,7 +324,7 @@
         </div>
       </section>
     </div>
-
+    <script src="./scripts/navigation.js"></script>
     <script src="./scripts/masonry.js"></script>
     <script src="./scripts/particles.js"></script>
     <script src="./scripts/app.js"></script>
