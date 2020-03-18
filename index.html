@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./dist/css/style.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <script src="/dist/es2015/lightbox.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -31,11 +32,11 @@
         </div>
         <div class="navigation-menu">
           <ul>
-            <li><a href="#">O mnie</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Usługi</a></li>
-            <li><a href="#">Współpraca</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="#aboutMe">O mnie</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Usługi</a></li>
+            <li><a href="#cooperation">Współpraca</a></li>
+            <li><a href="#contact">Kontakt</a></li>
             <!-- <li><a href="">PRICING</a></li> -->
           </ul>
         </div>
@@ -47,7 +48,7 @@
       </div>
 
       <!-- About Me Section -->
-      <section class="aboutMe">
+      <section class="aboutMe" id="aboutMe">
         <h1 class="aboutMe__title">O mnie</h1>
 
         <div class="first__row">
@@ -90,7 +91,7 @@
       </section>
 
       <!-- Portfolio Section -->
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <h1 class="portfolio__title">Portfolio</h1>
         <p class="portfolio__text">
           Nie sposób zliczyć projekty które wyszły spod mojej ręki, są to
@@ -215,7 +216,7 @@
       </section>
 
       <!-- services section -->
-      <section class="services">
+      <section class="services" id="services">
         <img src="./images/złote logo.jpg" alt="" class="services__img" />
         <h1 class="services__title">Usługi</h1>
         <p class="services__text">
@@ -231,7 +232,7 @@
       </section>
 
       <!-- cooperation section -->
-      <section class="cooperation">
+      <section class="cooperation" id="cooperation">
         <h1 class="cooperation__title">Współpraca</h1>
         <div class="cooperation__container">
           <p class="cooperation__text">
@@ -267,7 +268,7 @@
       </section>
 
       <!-- contact section -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="particles" id="particles-js"></div>
 
         <div class="contact__wrapper">
@@ -276,25 +277,25 @@
             <div class="container__media">
               <ul class="media__list">
                 <li class="list__position">
-                  <a href="instagram.com/Akwartone"
+                  <a href="https://www.instagram.com/Akwartone/"
                     ><img src="./images/icon_instagram.png" alt="" />
                     <span>instagram.com/Akwartone</span>
                   </a>
                 </li>
                 <li class="list__position">
-                  <a href="facebook.com/Akwartone"
+                  <a href="https://www.facebook.com/Akwartone"
                     ><img src="./images/icon_facebook.png" alt="" />
                     <span>facebook.com/Akwartone</span></a
                   >
                 </li>
                 <li class="list__position">
-                  <a href="twitter.com/Akwartone"
+                  <a href="http://www.twitter.com/Akwartone"
                     ><img src="./images/icon_twitter.png" alt="" />
                     <span> twitter.com/Akwartone</span></a
                   >
                 </li>
                 <li class="list__position">
-                  <a href="akwartone@gmail.com"
+                  <a href="http://www.akwartone@gmail.com"
                     ><img src="./images/icon_gmail.png" alt="" />
                     <span> akwartone@gmail.com</span>
                   </a>
@@ -302,7 +303,7 @@
               </ul>
             </div>
             <div class="container__form">
-              <form action="" class="form__content">
+              <form class="form__content" id="sheet">
                 <input
                   type="text"
                   name="name"
@@ -334,5 +335,6 @@
     <script src="./scripts/masonry.js"></script>
     <script src="./scripts/particles.js"></script>
     <script src="./scripts/app.js"></script>
+    <script src="./scripts/mailsender.js"></script>
   </body>
 </html>

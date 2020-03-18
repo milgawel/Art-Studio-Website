@@ -2,6 +2,7 @@ section.cooperation {
   width: 90%;
   margin: 0 auto;
   min-height: 100vh;
+  padding-top: 20px;
   // display: none;
 
   @media (max-width: 1260px) {
@@ -49,6 +50,8 @@ section.cooperation {
       @media (max-width: 1024px) {
         font-size: 16px;
         line-height: 24px;
+        margin: 20px auto;
+        width: 90%;
       }
     }
     img.cooperation__img {

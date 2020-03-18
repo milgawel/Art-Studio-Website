@@ -22,6 +22,9 @@ div.wrapper {
   @media (min-width: 1920px) {
     margin: 0 auto;
   }
+  @media (max-width: 660px) {
+    overflow-x: hidden;
+  }
 }
 
 @import "./Header";
