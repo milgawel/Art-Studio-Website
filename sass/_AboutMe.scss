@@ -1,6 +1,7 @@
 section.aboutMe {
-  width: 100%;
-  min-height: 100vh;
+  width: 95%;
+  margin: 0 auto;
+  // min-height: 100vh;
   position: relative;
   // display: none;
 
@@ -23,25 +24,25 @@ section.aboutMe {
   }
 
   div.first__row {
-    margin-right: 5vw;
-    height: 420px;
     display: flex;
     flex-direction: row;
-
+    // border: 2px solid red;
     div.main__label {
       padding: 5px 5vw;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 40px;
-      width: 70%;
+      // width: 100%;
       justify-content: space-between;
+      // border: 2px solid red;
       div.label {
         width: 100%;
         font-size: 4vw;
         font-weight: 700;
         justify-content: center;
         line-height: 4vw;
-        padding-top: 35%;
+        padding-top: 25%;
+        // border: 2px solid red;
         text-transform: uppercase;
 
         p.text {
@@ -64,23 +65,21 @@ section.aboutMe {
       }
     }
     img {
-      margin-right: 30px;
-      margin-top: 2.5vw;
-      height: 22vw;
+      height: 20vw;
       max-height: 400px;
     }
   }
 
   div.second__row {
     display: grid;
-    padding: 20px 10vw 20px 200px;
+    padding: 0 10% 20px 10%;
     grid-template-columns: 1fr 2fr;
     grid-gap: 0px;
     img {
       height: 22vw;
     }
     p.text {
-      line-height: 45px;
+      line-height: 35px;
     }
   }
 }
