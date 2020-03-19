@@ -9,7 +9,7 @@ $(function() {
       color_icon: "white",
       border_width: 12,
       border_color: "white",
-      opacity: 0.5,
+      opacity: 1,
       hover_opacity: 1
     },
     arrows: {
