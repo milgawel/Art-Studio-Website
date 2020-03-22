@@ -9,7 +9,6 @@ const sendEmail = e => {
 
   if (
     name.length === 0 ||
-    name == null ||
     email.length === 0 ||
     body.length < 5 ||
     !email.includes("@") ||
@@ -21,7 +20,7 @@ const sendEmail = e => {
       Host: "smtp.gmail.com",
       Username: `akwartonex@gmail.com`,
       Password: "Akwartone1!",
-      To: "akwartonex@gmail.com",
+      To: "akwartone.biuro@gmail.com",
       From: "akwartonex@gmail.com",
       Subject: `strona AKWARTONE email od ${name} - ${email}`,
       Body: `${body}`
