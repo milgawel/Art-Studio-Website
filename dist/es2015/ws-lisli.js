@@ -2,7 +2,7 @@ import { stylizer } from "./_partials/_stylizer.js";
 import { basics } from "./_partials/_basics.js";
 (($) => {
   $.fn.WS_lightbox_free = function (options) {
-    // let base_url = 'https://cdn.jsdelivr.net/gh/alexandrebulete/ws-lisli/dist';
+    // let base_url = "https://cdn.jsdelivr.net/gh/alexandrebulete/ws-lisli/dist";
     createBaseDOM();
     const $app = $(".WS-lightbox");
     const $container = $(".WS-lightbox--container");

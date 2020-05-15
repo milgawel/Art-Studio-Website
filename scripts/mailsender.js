@@ -1,7 +1,6 @@
-console.log("ja to naprawie");
 const form = document.getElementById("form");
 
-const sendEmail = e => {
+const sendEmail = (e) => {
   e.preventDefault();
   name = document.getElementById("formName").value;
   email = document.getElementById("formEmail").value;
@@ -23,8 +22,8 @@ const sendEmail = e => {
       To: "akwartone.biuro@gmail.com",
       From: "akwartonex@gmail.com",
       Subject: `strona AKWARTONE email od ${name} - ${email}`,
-      Body: `${body}`
-    }).then(message => alert("mail sent successfully"));
+      Body: `${body}`,
+    }).then((message) => alert("mail sent successfully"));
     form.reset();
   }
 };

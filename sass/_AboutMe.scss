@@ -4,25 +4,24 @@ section.aboutMe {
   padding-top: 30px;
   position: relative;
 
-  h1.aboutMe__title {
+  .aboutMe__title {
     margin: 30px auto;
     font-weight: 500;
     font-size: 30px;
     text-transform: uppercase;
     width: 130px;
     height: 50px;
+    &:after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 55%;
+      padding-top: 20px;
+      border-bottom: 2px solid white;
+    }
   }
 
-  h1.aboutMe__title::after {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 55%;
-    padding-top: 20px;
-    border-bottom: 2px solid white;
-  }
-
-  div.first__row {
+  .first__row {
     display: flex;
     flex-direction: row;
     // border: 2px solid red;
@@ -31,7 +30,7 @@ section.aboutMe {
       flex-wrap: wrap;
       flex-direction: row;
     }
-    div.main__label {
+    .main__label {
       padding: 5px 5vw;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -45,7 +44,7 @@ section.aboutMe {
         padding: 0;
       }
 
-      div.label {
+      .label {
         width: 100%;
         font-size: 4vw;
         font-weight: 700;
@@ -70,7 +69,7 @@ section.aboutMe {
         }
       }
 
-      div.first__label::after {
+      .first__label::after {
         content: "";
         display: block;
         position: relative;
@@ -96,7 +95,7 @@ section.aboutMe {
     }
   }
 
-  div.second__row {
+  .second__row {
     display: grid;
     padding: 0 10% 20px 10%;
     grid-template-columns: 1fr 2fr;
@@ -113,13 +112,11 @@ section.aboutMe {
       @media (max-width: 640px) {
         display: none;
         margin: 30px auto 20px;
-        // height: 220px;
       }
     }
-    p.text {
+    .text {
       line-height: 35px;
       @media (max-width: 640px) {
-        // border: 2px solid red;
         width: 100%;
         margin-top: 10px;
         justify-content: center;
